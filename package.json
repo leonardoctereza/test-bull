@@ -1,0 +1,24 @@
+{
+  "name": "messageQueue",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "nodemon -r dotenv-safe/config -r esm ./src/server.js",
+    "docker:dev": "docker-compose -f docker-compose.yml up"
+  },
+  "devDependencies": {
+    "eslint": "^8.4.1",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-prettier": "^4.0.0",
+    "prettier": "^2.5.1"
+  },
+  "dependencies": {
+    "bull": "3.29.3",
+    "dotenv-safe": "^8.2.0",
+    "esm": "^3.2.25",
+    "express": "^4.17.1",
+    "ioredis": "^4.28.2",
+    "mongoose": "^6.1.1"
+  }
+}
